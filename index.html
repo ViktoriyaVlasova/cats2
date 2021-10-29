@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Опрос</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+  	<div class="container">
+		<div class="text-center">
+			<h1 class="display-4">Опрос</h1>
+			<p class="text-mute text-center">описание опроса</p>
+		</div>
+		<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+			<li class="nav-item" role="presentation">
+			<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+			<h4 class="m-0">Шаг 1</h4>
+			<h6 class="m-0">персональная информация</h6></button>
+			</li>
+			<li class="nav-item" role="presentation">
+			<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+			<h4 class="m-0">Шаг 2</h4>
+			<h6 class="m-0">опрос</h6></button>
+			</button>
+			</li>
+			<li class="nav-item" role="presentation">
+			<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+			<h4 class="m-0">Шаг 3</h4>
+			<h6 class="m-0">вопросы с выбором</h6></button>
+			</button>
+			</li>
+		</ul>
+		<div class="tab-content" id="myTab">
+		  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="pills-home-tab"><form>
+		  	<div class="row mt-3">
+		  		<div class="col-lg-3 col-sm-12">
+			  		<p class="">Пол:</p>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">М</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+					  <label class="form-check-label" for="inlineRadio2">Ж</label>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-12">
+					  <div class="mb-3">
+					    <label for="age1" class="form-label">Возраст:</label>
+					    <input type="age" class="form-control" id="age1">
+					  </div>
+				</div>
+				<div class="col-lg-6 col-sm-12">
+					  <div class="mb-3">
+					    <label for="phone1" class="form-label">Телефон:</label>
+					    <input type="phone" class="form-control" id="phone1">
+					  </div>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-lg-6 col-sm-122">
+					  <div class="mb-3">
+					    <label for="name1" class="form-label">Имя:</label>
+					    <input type="name" class="form-control" id="name1" value="Имя Фамилия">
+					  </div>
+				</div>
+				<div class="col-lg-6 col-sm-12">
+					  <div class="mb-3">
+					    <label for="email1" class="form-label">Email:</label>
+					    <input type="email" class="form-control" id="email1" value="email@gmail.com">
+					  </div>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-lg-8 col-sm-12">
+					  <div class="mb-3">
+					    <label for="adress1" class="form-label">Адрес:</label>
+					    <input type="adress" class="form-control" id="adress1" value="д. 1 ул. Лесная">
+					  </div>
+				</div>
+				<div class="col-lg-4 col-sm-12">
+					  <div class="mb-3">
+					    <label for="kv1" class="form-label">Квартира:</label>
+					    <input type="kv" class="form-control" id="kv1" value="111">
+					  </div>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-lg-3 col-sm-12">
+					  <div class="mb-3">
+					    <label for="city1" class="form-label">Город:</label>
+					    <input type="city" class="form-control" id="city1" value="Москва">
+					  </div>
+				</div>
+				<div class="col-lg-3 col-sm-12">
+					  <div class="mb-3">
+					    <label for="ind1" class="form-label">Индекс:</label>
+					    <input type="ind" class="form-control" id="ind1" value="111111">
+					  </div>
+				</div>
+				<div class="col-lg-6 col-sm-12">
+					<label for="cntr" class="form-label">Страна:</label>
+					<select class="form-select" aria-label="Default select example" id="cntr">
+						  <option selected>- Выберите страну -</option>
+						  <option value="1">Россия</option>
+						  <option value="2">Китай</option>
+						  <option value="3">Казахстан</option>
+					</select>
+				</div>
+			</div>
+			<div>
+				<button type="submit" class="btn btn-outline-secondary d-block ms-auto" id="go-to-step-2">2 шаг</button>
+			</div>
+		  </form>
+		</div>
+		  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+		  	<div class="row mt-3 mb-3">
+		  		<h1 class="display-6 text-center
+		  		mb-3">Вопрос</h1>
+		  		<div class="col-lg-6 col-sm-12">
+		  			<img src="img/k1.jpg" width="600">
+		  			<p class="text-mute text-center">оцените кота</p>
+		  		</div>
+		  		<div class="col-lg-6 col-sm-12">
+		  			<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Отлично</label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Нейтрально</label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Плохо</label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <input type="ind" class="form-control" id="ind1" value="Другой вариант">
+					</div>
+		  		</div>
+		  	</div>
+		  	<hr>
+		  	<div class="row mt-3 mb-3">
+		  		<h1 class="display-6 text-center
+		  		mb-3">Вопрос</h1>
+		  		<div class="col-lg-6 col-sm-12">
+		  			<img src="img/k2.jpg" width="600">
+		  			<p class="text-mute text-center">оцените кота</p>
+		  		</div>
+		  		<div class="col-lg-6 col-sm-12">
+		  			<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Отлично</label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Нейтрально</label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Плохо</label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <input type="ind" class="form-control" id="ind1" value="Другой вариант">
+					</div>
+		  		</div>
+		  	</div>
+		  	<hr>
+		  	<div class="row mt-3 mb-3">
+		  		<h1 class="display-6 text-center
+		  		mb-3">Вопрос</h1>
+		  		<div class="col-lg-6 col-sm-12">
+		  			<img src="img/k3.jpg" width="600">
+		  			<p class="text-mute text-center">оцените кота</p>
+		  		</div>
+		  		<div class="col-lg-6 col-sm-12">
+		  			<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Отлично</label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Нейтрально</label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Плохо</label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <input type="ind" class="form-control" id="ind1" value="Другой вариант">
+					</div>
+		  		</div>
+		  	</div>
+		  	<hr>
+		  	<div class="row mt-3 mb-3">
+		  		<h1 class="display-6 text-center
+		  		mb-3">Вопрос</h1>
+		  		<div class="col-lg-6 col-sm-12">
+		  			<img src="img/k5.jpg" width="600">
+		  			<p class="text-mute text-center">оцените кота</p>
+		  		</div>
+		  		<div class="col-lg-6 col-sm-12">
+		  			<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Отлично</label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Нейтрально</label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Плохо</label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <input type="ind" class="form-control" id="ind1" value="Другой вариант">
+					</div>
+		  		</div>
+		  	</div>
+		  	<hr>
+		  	<div class="row mt-3 mb-3">
+		  		<h1 class="display-6 text-center
+		  		mb-3">Вопрос</h1>
+		  		<div class="col-lg-6 col-sm-12">
+		  			<img src="img/k4.jpg" width="600">
+		  			<p class="text-mute text-center">оцените кота</p>
+		  		</div>
+		  		<div class="col-lg-6 col-sm-12">
+		  			<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Отлично</label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Нейтрально</label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Плохо</label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <input type="ind" class="form-control" id="ind1" value="Другой вариант">
+					</div>
+		  		</div>
+		  	</div>
+			<button type="submit" class="btn btn-outline-secondary d-block ms-auto" id="go-to-step-2">3 шаг</button>
+		  </div>
+		  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+		  		<div class="row mt-3">
+		  		<div class="col-sm-12 col-lg-6">
+		  			<h6>Отметьте сколько у вас есть котов/кошек</h6>
+		  			<p class="text-mute"></p>
+		  		</div>
+		  		<div class="col-lg-6 col-sm-12">
+		  			<div class="d-flex justify-content-between">
+		  				<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1">1</label>
+							</div>
+							<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">2</label>
+							</div>
+							<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">3</label>
+							</div>
+							<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">4</label>
+							</div>
+							<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">5</label>
+						</div>
+		  			</div>
+					<textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+		  		</div>
+		  	</div>
+		  	<hr>
+		  	<div class="row mt-3">
+		  		<div class="col-sm-12 col-lg-6">
+		  			<h6>Как Вы относитесь к котам?</h6>
+		  			<p class="text-mute">1 - плохо, 5 - очень хорошо</p>
+		  		</div>
+		  		<div class="col-lg-6 col-sm-12">
+		  			<div class="d-flex justify-content-between btn-group" role="group" aria-label="Basic radio toggle button group">
+						<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+						<label class="btn btn-outline-secondary" for="btnradio1"> 1</label>
+						<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+						<label class="btn btn-outline-secondary" for="btnradio2"> 2 </label>
+						<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+						<label class="btn btn-outline-secondary" for="btnradio3"> 3</label>
+						<input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+						<label class="btn btn-outline-secondary" for="btnradio4"> 4</label>
+						<input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+						<label class="btn btn-outline-secondary" for="btnradio5"> 5</label>
+						<input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+						<label class="btn btn-outline-secondary" for="btnradio6"> n/a</label>
+					</div>
+					<textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+		  		</div>
+		  	</div>
+		  	<hr>
+		  	<div class="row mt-3">
+		  		<div class="col-sm-12 col-lg-6">
+		  			<h6>Насколько сильно Вы любите котов?</h6>
+		  			<p class="text-mute">1 - не люблю, 5 - очень сильно</p>
+		  		</div>
+		  		<div class="col-lg-6 col-sm-12 mb-3">
+		  			<div class="d-flex justify-content-between btn-group" role="group" aria-label="Basic radio toggle button group">
+						<label for="customRange1" class="form-label">1</label>
+						<input type="range" class="form-range" id="customRange1">
+						<label for="customRange1" class="form-label">5</label>
+					</div>
+					<textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+		  		</div>
+		  	</div>
+		  	<button type="submit" class="btn btn-outline-secondary d-block ms-auto" id="go-to-step-2"><a href="rez.html" style="text-decoration: none;">3 шаг</a></button>
+		  </div>
+		</div>
+	</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
